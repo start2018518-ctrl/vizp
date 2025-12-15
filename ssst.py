@@ -101,7 +101,7 @@ df = pd.DataFrame(counter.items(), columns=["단어", "빈도"]).sort_values(by=
 df = df.reset_index(drop=True).head(10)
 
 st.divider()
-'### :orange[Altair: 단어개수 top 15]'
+'### :orange[Altair: 단어개수 top 10]'
 import altair as alt
 import pandas as pd
 import numpy as np
@@ -184,6 +184,7 @@ fig, ax = plt.subplots()
 sns.barplot(data=df3, x="단어", y="빈도", ax=ax)
 
 st.pyplot(fig)
+
 
 
 
