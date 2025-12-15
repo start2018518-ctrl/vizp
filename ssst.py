@@ -65,7 +65,7 @@ from itertools import combinations
 from collections import Counter
 import networkx as nx
 import matplotlib.pyplot as plt
-import koreanize_matplotlib
+
 import re
 from konlpy.tag import Okt
 
@@ -184,5 +184,6 @@ fig, ax = plt.subplots()
 sns.barplot(data=df3, x="단어", y="빈도", ax=ax)
 
 st.pyplot(fig)
+
 
 
