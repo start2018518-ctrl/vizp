@@ -75,7 +75,7 @@ descriptions = df['description'].tolist()
 
 okt = Okt()
 
-with open('C:/A_projectsc/visualizp/pndata/korean_stopwords.txt', 'r', encoding='utf-8') as f:
+with open('korean_stopwords.txt', 'r', encoding='utf-8') as f:
     stopwords = f.read().splitlines()
     
 all_nouns = []
@@ -184,4 +184,5 @@ fig, ax = plt.subplots()
 sns.barplot(data=df3, x="단어", y="빈도", ax=ax)
 
 st.pyplot(fig)
+
 
