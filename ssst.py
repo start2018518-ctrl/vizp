@@ -24,7 +24,7 @@ st.divider()
 
 '# :orange[네트워크 시각화]'
 # --------------------- llm 일부 사용 -> width=900 추가 -------------------------------
-st.image("C:/A_projectsc/visualizp/pndata/output1.png", width=900)
+st.image("output1.png", width=900)
 # -------------------------------------------------------------------------------
 
 
@@ -43,7 +43,7 @@ st.divider()
 
 '# :orange[워드클라우드]'
 
-st.image("C:/A_projectsc/visualizp/pndata/output2.png", width=900)
+st.image("output2.png", width=900)
 
 with open("output2.png", "rb") as file:
     st.download_button(
@@ -69,7 +69,7 @@ import koreanize_matplotlib
 import re
 from konlpy.tag import Okt
 
-df = pd.read_csv('C:/A_projectsc/visualizp/pages/kdh.csv')
+df = pd.read_csv('kdh.csv')
 
 descriptions = df['description'].tolist()
 
@@ -184,3 +184,4 @@ fig, ax = plt.subplots()
 sns.barplot(data=df3, x="단어", y="빈도", ax=ax)
 
 st.pyplot(fig)
+
