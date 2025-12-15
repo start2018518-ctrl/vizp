@@ -3,3 +3,4 @@ networkx
 matplotlib
 koreanize_matplotlib
 konlpy
+mecab-python3
